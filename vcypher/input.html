@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>vcypher</title>
+		
+		<style type="text/css">
+
+			body
+			{
+				margin-left:2%;
+				padding:0;
+			}
+
+			label
+			{
+				float:right;
+			}
+		
+		</style>
+		
+	</head>
+
+	<body>
+		<h2>Encrypts a user entered password<br /></h2>
+
+		<form	name="userInput" method="post" action="vcypher_encrypt.php"
+			enctype= "text/plain">
+			
+			<table border="0">
+				<tr>
+					<td><label for="data">Enter data:</label></td>
+					<td><input type="text" name="data" id="data" /></td>
+				</tr>
+
+				<tr>
+					<td>
+						<label for="password">Enter password:</label>
+					</td>
+					
+					<td>
+						<input type="text" name="password" id="password" />
+					</td>
+				</tr>
+			</table>
+			
+			<br />
+
+			<input	type="submit" name="encrypt" value="Encrypt"
+				onclick="userInput.action='vcypher_encrypt.php'" />
+
+			<input	type="submit" name="decrypt" value="Decrypt"
+				onclick="userInput.action='vcypher_decrypt.php'" />
+
+		</form>
+	</body>
+</html>
+
